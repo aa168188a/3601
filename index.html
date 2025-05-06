@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<html lang="en">  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      谷歌浏览器
+    </title>
+    <meta name="Keywords" content="谷歌浏览器">
+    <meta name="Description" content="谷歌浏览器">
+    <style type="text/css">
+      .agl-hover { outline: 2px solid rgba(244,67,54,0.99) !important; background-color:
+      rgba(244,67,54,0.2) !important; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8)
+      !important; } .agl-highlight-current { outline: 2px solid rgba(255,87,34,0.99)
+      !important; background-color: rgba(255,87,34,0.4) !important; } .agl-highlight-similar
+      { outline: 2px dashed rgba(255,87,34,0.99) !important; background-color:
+      rgba(255,87,34,0.4) !important; } .agl-highlight-group { outline: 4px double
+      rgba(255,87,34,0.99) !important; background-color: rgba(255,87,34,0.4)
+      !important; } .agl-cover-current { position: absolute !important; top:
+      0; left: 0; z-index: 9 !important; outline: 2px solid rgba(33,33,33,0.99)
+      !important; background-color: rgba(33,33,33,0.6) !important; } .agl-cover-similar
+      { position: absolute !important; top: 0; left: 0; z-index: 9 !important;
+      outline: 2px dashed rgba(33,33,33,0.99) !important; background-color: rgba(33,33,33,0.6)
+      !important; } .agl-cover-group { position: absolute !important; top: 0;
+      left: 0; z-index: 9 !important; outline: 4px double rgba(33,33,33,0.99)
+      !important; background-color: rgba(33,33,33,0.6) !important; } .agl-cover-focus
+      { outline: 3px solid rgba(255,165,0,0.99) !important; background-color:
+      rgba(255,165,0,0.4) !important; }
+    </style>
+    <link rel="stylesheet" href="static/css/index.css">
+    <style>
+      .ai-header { background-color: #f8f9fa; }
+    </style>
+    
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1701bd88242a403a6a4e713fbd8d1418";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  </head>
+  
+  <body>
+   
+    <div class="main">
+      <style>
+        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px} a{text-decoration:none;color:#4285F4}
+        a:hover{text-decoration:none;color:#3367D6} img{max-width:100%;height:auto}
+        .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px
+        28px;font-size:1rem;font-weight:500;border-radius:4px;cursor:pointer;transition:all
+        0.3s ease;text-decoration:none} .btn-primary{background-color:#1a73e8;color:white;border:none;border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all
+        0.25s cubic-bezier(0.4,0,0.2,1);box-shadow:0 1px 3px rgba(0,0,0,0.12),0
+        1px 2px rgba(0,0,0,0.24);padding:12px 24px;font-size:16px;font-weight:500}
+        .btn-primary:hover{background-color:#0d66d0;box-shadow:0 2px 5px rgba(0,0,0,0.16),0
+        2px 4px rgba(0,0,0,0.2)} .btn-primary:active{transform:scale(0.98);box-shadow:0
+        1px 2px rgba(0,0,0,0.1)} .btn-large{font-size:16px;padding:14px 30px;border-radius:6px;min-width:200px;font-weight:500;letter-spacing:0.5px;box-shadow:0
+        2px 5px rgba(26,115,232,0.3)} .btn-large:hover{transform:translateY(-2px);box-shadow:0
+        4px 8px rgba(26,115,232,0.4);background-color:#0d66d0} section{padding:80px
+        0} section:not(:last-child){margin-bottom:0} .section-title{text-align:center;margin-bottom:15px;font-size:2.2rem;color:#202124;font-weight:600;position:relative;padding-bottom:15px;display:inline-block}
+        .section-title::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:3px;background-color:#1a73e8;border-radius:3px}
+        .section-subtitle{font-size:1.1rem;text-align:center;margin-bottom:40px;color:#5F6368}
+        .section-header{margin-bottom:50px;text-align:center} .hero{padding:100px
+        0 40px;background:#F8F9FA;position:relative;overflow:hidden;min-height:500px;margin-bottom:0;text-align:center}
+        .hero::before{content:none} .hero::after{content:none} .hero .container{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:2}
+        .hero-content{text-align:center;max-width:760px;position:relative;z-index:3;margin-bottom:40px}
+        .hero-content h1{font-size:3.5rem;font-weight:700;margin-bottom:1rem;color:#000000;display:flex;align-items:center;justify-content:center;gap:15px}
+        .hero-content h1 img{height:46px;width:auto;margin-right:10px} .version-tag{font-size:0.9rem;font-weight:500;color:white;margin-left:10px;background-color:#1a73e8;padding:4px
+        10px;border-radius:20px;display:inline-block;vertical-align:middle;letter-spacing:0.5px}
+        .hero-content h2{font-size:1.8rem;font-weight:500;margin-bottom:1.5rem;color:#5F6368;line-height:1.4}
+        .hero-cta{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:30px;position:relative;z-index:5}
+        .hero-cta .btn-primary{font-size:1.2rem;padding:15px 32px;border-radius:6px;transition:all
+        0.25s cubic-bezier(0.4,0,0.2,1);display:flex;align-items:center;justify-content:center;font-weight:500;background-color:#1a73e8;box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);border:none;position:relative;color:white;text-shadow:0
+        1px 1px rgba(0,0,0,0.1)} .hero-cta .btn-primary:hover{background-color:#0d66d0;box-shadow:0
+        2px 5px rgba(0,0,0,0.16),0 2px 4px rgba(0,0,0,0.2);color:white;text-shadow:0
+        1px 2px rgba(0,0,0,0.2)} .hero-cta .btn-primary:active{transform:scale(0.98);box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)} .hero-cta .btn-primary
+        svg{width:20px;height:20px;margin-right:8px;transition:transform 0.2s ease}
+        .hero-cta .btn-primary:hover svg{transform:translateY(2px)} .download-info{font-size:13px;color:#5F6368}
+        .hero-image{position:relative;z-index:2;animation:float 6s ease-in-out
+        infinite;filter:drop-shadow(0 10px 20px rgba(0,0,0,0.1));max-width:800px;margin:0
+        auto} .browser-preview{max-width:100%;border-radius:8px;box-shadow:0 4px
+        6px rgba(0,0,0,0.1)} .hero-to-features-transition{position:relative;height:100px;width:100%;overflow:hidden;margin-top:-20px;background:#F8F9FA}
+        .hero-to-features-transition svg{position:absolute;bottom:0;width:100%;height:100px;display:block}
+        .features{padding:40px 0 80px;background-color:#fff;position:relative;z-index:2;margin-top:-20px}
+        .features .section-header{margin-bottom:50px} .feature-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;position:relative;z-index:2}
+        .feature-card{background:white;padding:30px 25px;border-radius:8px;box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);transition:all 0.3s
+        ease;text-align:center;position:relative;z-index:2;animation:fadeInUp 0.6s
+        ease-out;animation-fill-mode:both} .feature-card:hover{transform:translateY(-5px);box-shadow:0
+        4px 8px rgba(0,0,0,0.15),0 2px 4px rgba(0,0,0,0.12)} .feature-icon{width:70px;height:70px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;margin:0
+        auto 20px} .speed-icon{background-color:rgba(66,133,244,0.1);color:#4285F4}
+        .security-icon{background-color:rgba(52,168,83,0.1);color:#34A853} .sync-icon{background-color:rgba(251,188,5,0.1);color:#FBBC05}
+        .personalize-icon{background-color:rgba(234,67,53,0.1);color:#EA4335} .feature-card
+        h3{font-size:1.5rem;margin-bottom:15px;color:#000000} .feature-card p{color:#5F6368;font-size:1rem;line-height:1.5}
+        .features-cta{text-align:center;margin-top:40px;position:relative;z-index:2;display:flex;justify-content:center}
+        .features-cta .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px
+        30px;font-size:16px;font-weight:500;border-radius:6px;width:auto;max-width:220px;transition:all
+        0.25s cubic-bezier(0.4,0,0.2,1);box-shadow:0 2px 5px rgba(26,115,232,0.3);margin:0
+        auto} .features-cta .btn-primary{background-color:#1a73e8;color:white;text-shadow:0
+        1px 1px rgba(0,0,0,0.1)} .features-cta .btn-primary:hover{background-color:#0d66d0;box-shadow:0
+        4px 8px rgba(26,115,232,0.4);transform:translateY(-2px)} .features-cta
+        .btn-primary:active{transform:scale(0.98);box-shadow:0 1px 3px rgba(0,0,0,0.12),0
+        1px 2px rgba(0,0,0,0.24)} .features-cta .btn-primary svg{width:20px;height:20px;margin-right:8px;transition:transform
+        0.2s ease} .features-cta .btn-primary:hover svg{transform:translateY(2px)}
+        .performance{padding:0px;background-color:#fff;position:relative} .performance
+        .section-header{margin-bottom:50px} .performance-layout{display:flex;flex-direction:column;gap:40px;align-items:center}
+        .performance-header{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+        .feature-title-item{display:flex;flex-direction:column;align-items:center;text-align:center;background:none;padding:20px;min-width:200px;transition:transform
+        0.3s ease} .feature-title-item:hover{transform:translateY(-8px)} .feature-title-item
+        h3{margin:20px 0 0 0;font-size:18px;font-weight:500;color:#202124;letter-spacing:0.15px}
+        .feature-icon-large{width:80px;height:80px;border-radius:20px;display:flex;align-items:center;justify-content:center;transition:transform
+        0.3s ease,box-shadow 0.3s ease} .feature-icon-large:hover{transform:scale(1.1);box-shadow:0
+        12px 24px rgba(0,0,0,0.2)} .feature-icon-large svg{width:40px;height:40px}
+        .feature-icon-large.blue{background-color:#4285F4;color:white} .feature-icon-large.green{background-color:#34A853;color:white}
+        .feature-icon-large.yellow{background-color:#FBBC05;color:white} .feature-icon-large.red{background-color:#EA4335;color:white}
+        .performance-image-container{text-align:center;padding:20px 0} .performance-chart{max-width:90%;height:auto;box-shadow:0
+        15px 40px rgba(0,0,0,0.2);border-radius:12px;transition:transform 0.5s
+        ease} .performance-chart:hover{transform:translateY(-10px) scale(1.02)}
+        .performance-description-container{display:flex;flex-direction:column;gap:40px;max-width:800px;margin:0
+        auto;align-items:center} .performance-description{background:none;padding:0;border-radius:0;width:100%}
+        .performance-description p{margin:0;font-size:18px;line-height:1.8;color:#5f6368;text-align:center;font-weight:400}
+        .performance-cta{display:flex;justify-content:center;margin-top:30px} .performance-cta
+        .btn-primary{font-size:1.2rem;padding:15px 32px;border-radius:8px;transition:all
+        0.25s cubic-bezier(0.4,0,0.2,1);display:flex;align-items:center;justify-content:center;font-weight:500;background-color:#1a73e8;box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);border:none;position:relative;color:white;text-shadow:0
+        1px 1px rgba(0,0,0,0.1)} .performance-cta .btn-primary:hover{background-color:#0d66d0;box-shadow:0
+        3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);color:white;text-shadow:0
+        1px 2px rgba(0,0,0,0.2)} .performance-cta .btn-primary:active{transform:scale(0.98);box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)} .performance-cta .btn-primary
+        svg{width:24px;height:24px;margin-right:10px;transition:transform 0.2s
+        ease} .performance-cta .btn-primary:hover svg{transform:translateY(2px)}
+        .testimonials{padding:50px 0;background-color:#ffffff;overflow:hidden}
+        .testimonials .section-header{margin-bottom:50px} .testimonials .section-subtitle{text-align:center;color:#5f6368;font-size:1.1rem}
+        .testimonial-slider-container{position:relative;max-width:100%;margin:0
+        auto;padding:0 20px} .testimonial-slider{display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scroll-snap-type:x
+        mandatory;gap:20px;padding:20px 10px;margin:0 -10px;-ms-overflow-style:none;scrollbar-width:none}
+        .testimonial-slider::-webkit-scrollbar{display:none} .testimonial-slide{flex:0
+        0 calc(33.333% - 20px);min-width:300px;scroll-snap-align:start;display:flex;flex-direction:column;height:auto;min-height:280px;padding:24px;background:#ffffff;border-radius:12px;transition:transform
+        0.3s ease;position:relative;border:1px solid rgba(0,0,0,0.03)} .testimonial-slide:hover{transform:translateY(-5px);border-color:rgba(66,133,244,0.1)}
+        .testimonial-content{flex:1;margin-bottom:20px;display:flex;align-items:center}
+        .testimonial-text{margin:0;font-size:16px;line-height:1.6;color:#5f6368;font-style:italic;position:relative}
+        .testimonial-text::before{content:"\"";font-size:60px;position:absolute;left:-15px;top:-30px;color:rgba(66,133,244,0.1);font-family:Georgia,serif}
+        .user-info{display:flex;align-items:center;border-top:1px solid rgba(0,0,0,0.05);padding-top:15px;margin-top:20px}
+        .user-avatar{width:40px;height:40px;border-radius:50%;margin-right:15px;display:flex;align-items:center;justify-content:center;background:#fff}
+        .user-avatar svg{width:100%;height:100%} .user-details{flex:1} .user-name{margin:0
+        0 3px 0;font-size:16px;font-weight:500;color:#202124} .user-role{font-size:12px;color:#5f6368;margin-bottom:3px}
+        .user-stars{color:#FBBC05;font-size:14px} .slider-controls{display:flex;align-items:center;justify-content:center;margin-top:40px;gap:20px}
+        .prev-btn,.next-btn{width:40px;height:40px;border-radius:50%;background-color:#fff;border:1px
+        solid rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all
+        0.3s ease} .prev-btn:hover,.next-btn:hover{background-color:#4285F4;color:white}
+        .slider-dots{display:flex;gap:8px} .dot{width:10px;height:10px;border-radius:50%;background-color:#e0e0e0;cursor:pointer;transition:all
+        0.3s ease} .dot.active{background-color:#4285F4;transform:scale(1.3)} @media
+        (max-width:992px){.testimonial-slide{flex:0 0 calc(50% - 20px)} }@media
+        (max-width:768px){.testimonial-slide{flex:0 0 100%} }.performance-charts{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+        .performance-chart{background-color:white;border-radius:10px;padding:25px;width:280px;text-align:center;position:relative;box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);transition:transform
+        0.5s ease} .performance-chart:hover{transform:translateY(-10px) scale(1.02)}
+        .performance-description-container{display:flex;flex-direction:column;gap:30px;max-width:800px;margin:0
+        auto;align-items:center} .performance-description{background:none;padding:0;border-radius:0;width:100%}
+        .performance-description p{margin:0;font-size:18px;line-height:1.8;color:#5f6368;text-align:center;font-weight:400}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)}
+        }@keyframes float{0%{transform:translateY(0px)} 50%{transform:translateY(-10px)}
+        100%{transform:translateY(0px)} }@keyframes pulse{0%{box-shadow:0 0 0 0
+        rgba(66,133,244,0.6)} 70%{box-shadow:0 0 0 10px rgba(66,133,244,0)} 100%{box-shadow:0
+        0 0 0 rgba(66,133,244,0)} }html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+        .btn,.feature-card,.testimonial-card,.download-option{-webkit-transition:all
+        0.3s ease;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all
+        0.3s ease;transition:all 0.3s ease} .hero-content h1,.hero-content h2,.hero-cta{-webkit-animation-fill-mode:both;animation-fill-mode:both}
+        .btn-primary:hover{-webkit-transform:translateY(-1px);-moz-transform:translateY(-1px);-ms-transform:translateY(-1px);-o-transform:translateY(-1px);transform:translateY(-1px)}
+        .feature-card:hover,.testimonial-card:hover,.download-option:hover{-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-ms-transform:translateY(-5px);-o-transform:translateY(-5px);transform:translateY(-5px)}
+        .download-option.featured{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+        .download-option.featured:hover{-webkit-transform:scale(1.05) translateY(-5px);-moz-transform:scale(1.05)
+        translateY(-5px);-ms-transform:scale(1.05) translateY(-5px);-o-transform:scale(1.05)
+        translateY(-5px);transform:scale(1.05) translateY(-5px)} .download-section{padding:20px
+        0 100px;position:relative} .download-section .section-header{margin-bottom:50px}
+        .download-section .section-title{font-size:2.5rem;color:#202124;font-weight:600}
+        .download-buttons{display:flex;justify-content:center;align-items:stretch;gap:20px;max-width:700px;margin:0
+        auto} .download-button-group{flex:1;text-align:center;padding:0;display:flex;flex-direction:column}
+        .download-button-group .btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:16px
+        20px;font-size:16px;font-weight:500;border-radius:6px;margin:0;transition:all
+        0.25s cubic-bezier(0.4,0,0.2,1)} .download-button-group .btn svg{margin-right:4px}
+        .download-button-group .btn-outline{background-color:#f8f9fa;color:#4285F4;border:1px
+        solid #e8eaed} .download-button-group .btn-outline:hover{background-color:#f1f5ff;box-shadow:0
+        2px 5px rgba(0,0,0,0.08)} .download-button-group .btn-primary{background-color:#1a73e8;color:white;border:none;box-shadow:0
+        1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)} .download-button-group
+        .btn-primary:hover{background-color:#0d66d0;box-shadow:0 2px 5px rgba(0,0,0,0.16),0
+        2px 4px rgba(0,0,0,0.2)} .download-description{font-size:13px;color:#5F6368;margin:8px
+        0;padding:0 10px} .fixed-download-bar{position:fixed;bottom:0;left:0;right:0;background-color:white;box-shadow:0
+        -2px 8px rgba(0,0,0,0.08);padding:12px 0;z-index:100;border-top:1px solid
+        rgba(0,0,0,0.05)} .fixed-download-content{display:flex;align-items:center;justify-content:space-between}
+        .fixed-download-logo{display:flex;align-items:center;gap:10px} .fixed-download-logo
+        img{height:30px;width:auto} .fixed-download-logo span{font-size:1.1rem;font-weight:600;color:#202124}
+        .fixed-download-text p{color:#5F6368;font-size:0.9rem;margin:0} .fixed-download-button
+        .btn{padding:10px 24px;font-size:0.95rem;font-weight:500;background-color:#1a73e8;color:white;border:none;border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all
+        0.25s cubic-bezier(0.4,0,0.2,1);box-shadow:0 1px 3px rgba(0,0,0,0.12),0
+        1px 2px rgba(0,0,0,0.24);position:relative} .fixed-download-button .btn:hover{background-color:#0d66d0;box-shadow:0
+        2px 5px rgba(0,0,0,0.16),0 2px 4px rgba(0,0,0,0.2)} .fixed-download-button
+        .btn:active{transform:scale(0.98);box-shadow:0 1px 2px rgba(0,0,0,0.1)}
+        @media (max-width:768px){.fixed-download-text{display:none} .fixed-download-content{justify-content:space-around}
+        }
+      </style>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>
+              <img src="static/picture/e7bd98bc01f2f5b9cbc95aaa715a1843.png" alt="Chrome图标">
+              谷歌浏览器
+              <span class="version-tag">
+                电脑版
+              </span>
+            </h1>
+            <h2>
+              Chrome,不一样的浏览器体验
+            </h2>
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-highlight J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-1" status="1" download="" style="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                  </path>
+                  <polyline points="7 10 12 15 17 10">
+                  </polyline>
+                  <line x1="12" y1="15" x2="12" y2="3">
+                  </line>
+                </svg>
+                立即下载
+              </a>
+              <div class="download-info">
+                <span class="security-note">
+                  通过毒霸软件管家下载，感受更快捷安全的下载体验
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="static/picture/994f1ddd4a21d0bc8c6d80532db3121c.jpg" alt="Chrome浏览器界面预览" class="browser-preview" style="">
+          </div>
+        </div>
+      </section>
+      <div class="hero-to-features-transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 100" preserveaspectratio="none">
+          <path fill="#fff" fill-opacity="1" d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z">
+          </path>
+        </svg>
+      </div>
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              Chrome浏览器特性
+            </h2>
+            <p class="section-subtitle">
+              让您的浏览体验更简单、更愉悦、更高效
+            </p>
+          </div>
+          <div class="feature-cards">
+            <div class="feature-card">
+              <a download="" class="J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-5" status="1">
+                <div class="feature-icon speed-icon">
+                  <svg width="64" height="64" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="#4285F4">
+                    </path>
+                    <path d="M12.5 7H11V13L16.2 16.2L17 14.9L12.5 12.2V7Z" fill="#4285F4">
+                    </path>
+                  </svg>
+                </div>
+                <h3>
+                  极速浏览
+                </h3>
+                <p>
+                  采用先进内核，网页加载速度提升50%，视频无卡顿。
+                </p>
+              </a>
+            </div>
+            <div class="feature-card">
+              <a download="" class="J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-6" status="1">
+                <div class="feature-icon security-icon">
+                  <svg width="64" height="64" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z" fill="#34A853">
+                    </path>
+                  </svg>
+                </div>
+                <h3>
+                  安全防护
+                </h3>
+                <p>
+                  全方位安全防护，拦截恶意网站，保护个人隐私。
+                </p>
+              </a>
+            </div>
+            <div class="feature-card">
+              <a download="" class="J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-7" status="1">
+                <div class="feature-icon sync-icon">
+                  <svg width="64" height="64" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V1L8 5L12 9V6C15.31 6 18 8.69 18 12C18 13.01 17.75 13.97 17.3 14.8L18.76 16.26C19.54 15.03 20 13.57 20 12C20 7.58 16.42 4 12 4ZM12 18C8.69 18 6 15.31 6 12C6 10.99 6.25 10.03 6.7 9.2L5.24 7.74C4.46 8.97 4 10.43 4 12C4 16.42 7.58 20 12 20V23L16 19L12 15V18Z" fill="#EA4335">
+                    </path>
+                  </svg>
+                </div>
+                <h3>
+                  跨设备同步
+                </h3>
+                <p>
+                  书签、历史记录、设置一键同步，多设备无缝切换。
+                </p>
+              </a>
+            </div>
+            <div class="feature-card">
+              <a download="" class="J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-8" status="1">
+                <div class="feature-icon personalize-icon">
+                  <svg width="64" height="64" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z" fill="#FBBC05">
+                    </path>
+                  </svg>
+                </div>
+                <h3>
+                  智能推荐
+                </h3>
+                <p>
+                  基于大数据分析，提供个性化资讯和内容推荐。
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="performance" class="performance">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              领先的浏览体验
+            </h2>
+            <p class="section-subtitle">
+              让您的浏览体验更简单、更愉悦、更高效
+            </p>
+          </div>
+          <div class="performance-layout">
+            <div class="performance-header">
+              <div class="feature-title-item">
+                <div class="feature-icon-large blue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z">
+                    </path>
+                  </svg>
+                </div>
+                <h3>
+                  领先浏览速度
+                </h3>
+              </div>
+              <div class="feature-title-item">
+                <div class="feature-icon-large green">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z">
+                    </path>
+                  </svg>
+                </div>
+                <h3>
+                  高效内存管理
+                </h3>
+              </div>
+              <div class="feature-title-item">
+                <div class="feature-icon-large yellow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
+                    </path>
+                    <polyline points="22 4 12 14.01 9 11.01">
+                    </polyline>
+                  </svg>
+                </div>
+                <h3>
+                  全面安全防护
+                </h3>
+              </div>
+            </div>
+            <div class="performance-description-container">
+              <div class="performance-description">
+                <p>
+                  ✨ Chrome 最新版，智能又安全！自动更新、AI 加持，速度更快；深色模式、跨设备同步，个性随心。密码管理+安全浏览，隐私无忧。立即下载，开启高效网络体验！
+                  🚀 #由Google打造
+                </p>
+              </div>
+              <div class="performance-cta">
+                <a class="btn btn-primary btn-large   J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-4" status="1" download="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                    </path>
+                    <polyline points="7 10 12 15 17 10">
+                    </polyline>
+                    <line x1="12" y1="15" x2="12" y2="3">
+                    </line>
+                  </svg>
+                  立即下载体验
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              用户评论
+            </h2>
+            <p class="section-subtitle">
+              来自真实用户的体验分享
+            </p>
+          </div>
+          <div class="testimonial-slider-container">
+            <div class="testimonial-slider">
+              <!-- 评论1 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "使用Chrome浏览器已经5年了，速度非常快，从未遇到过安全问题。同步功能让我在家里和公司都能无缝使用我的书签和历史记录。"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#4285F4">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      王小明
+                    </h4>
+                    <div class="user-role">
+                      企业管理人员
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论2 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "作为一个经常需要在多个设备间切换的人，Chrome的同步功能对我来说简直是救星。界面简洁，速度快，功能强大，是我工作和生活的得力助手。"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#EA4335">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      李娜
+                    </h4>
+                    <div class="user-role">
+                      自由职业者
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论3 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "我是软件开发人员，Chrome的开发者工具让我的工作效率大大提高。扩展程序的丰富性也是其他浏览器无法比拟的。强烈推荐给所有人！"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#FBBC05">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      张伟
+                    </h4>
+                    <div class="user-role">
+                      软件工程师
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论4 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Chrome的隐私浏览功能让我非常放心，特别是在使用公共电脑时。浏览器的自动填充功能帮我节省了大量填写表单的时间。"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#34A853">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      刘洋
+                    </h4>
+                    <div class="user-role">
+                      学生
+                    </div>
+                    <div class="user-stars">
+                      ★★★★☆
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论5 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "我每天需要处理大量的在线文档，Chrome的性能和稳定性从未让我失望。标签管理和分组功能让我的工作更有条理。"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#4285F4">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      赵琳
+                    </h4>
+                    <div class="user-role">
+                      行政助理
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论6 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "在尝试过几乎所有主流浏览器后，我最终选择了Chrome。它的扩展程序生态系统非常丰富，让我能够定制适合自己需求的浏览体验。"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#EA4335">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      孙明
+                    </h4>
+                    <div class="user-role">
+                      网络营销专员
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论7 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Chrome的翻译功能是我浏览国外网站的得力助手。一键翻译整个网页，准确度很高，让我能够无障碍地获取全球信息。"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#34A853">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      杨丽
+                    </h4>
+                    <div class="user-role">
+                      外贸业务员
+                    </div>
+                    <div class="user-stars">
+                      ★★★★☆
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论8 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "我特别喜欢Chrome的密码管理功能，它会安全地存储我的密码，并在我登录网站时自动填充。再也不用担心忘记密码了！"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#FBBC05">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      钱佳
+                    </h4>
+                    <div class="user-role">
+                      银行工作人员
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 评论9 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Chrome是唯一一个满足我所有需求的浏览器：快速、安全、简洁。已经使用了3年，从未想过更换。强烈推荐给所有注重效率的人！"
+                  </p>
+                </div>
+                <div class="user-info">
+                  <div class="user-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="#4285F4">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="user-details">
+                    <h4 class="user-name">
+                      周强
+                    </h4>
+                    <div class="user-role">
+                      产品经理
+                    </div>
+                    <div class="user-stars">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls">
+              <button class="prev-btn" aria-label="上一个评论">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6">
+                  </polyline>
+                </svg>
+              </button>
+              <div class="slider-dots">
+                <button class="dot" aria-label="导航到评论组 1">
+                </button>
+                <button class="dot" aria-label="导航到评论组 2">
+                </button>
+                <button class="dot" aria-label="导航到评论组 3">
+                </button>
+                <button class="dot" aria-label="导航到评论组 4">
+                </button>
+                <button class="dot" aria-label="导航到评论组 5">
+                </button>
+              </div>
+              <button class="next-btn" aria-label="下一个评论">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6">
+                  </polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="download" class="download-section">
+        <div class="container">
+          <div class="download-buttons">
+            <div class="download-button-group">
+              <a href="javascript:down()" class="btn btn-outline J_commonDown" download="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                  </path>
+                  <polyline points="7 10 12 15 17 10">
+                  </polyline>
+                  <line x1="12" y1="15" x2="12" y2="3">
+                  </line>
+                </svg>
+                普通下载
+              </a>
+              <p class="download-description">
+                原始下载方式，少数人的选择
+              </p>
+            </div>
+            <div class="download-button-group">
+              <a class="btn btn-primary  J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-3" status="1" download="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                  </path>
+                  <polyline points="7 10 12 15 17 10">
+                  </polyline>
+                  <line x1="12" y1="15" x2="12" y2="3">
+                  </line>
+                </svg>
+                安全下载
+              </a>
+              <p class="download-description">
+                通过毒霸软件管家下载，感受更快捷安全的下载体验
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="fixed-download-bar">
+        <div class="container">
+          <div class="fixed-download-content">
+            <div class="fixed-download-logo">
+              <img src="static/picture/e7bd98bc01f2f5b9cbc95aaa715a1843.png" alt="Chrome图标">
+              <span>
+                谷歌浏览器
+              </span>
+            </div>
+            <div class="fixed-download-text">
+              <p>
+                极速安全，跨设备同步，智能体验尽在Chrome
+              </p>
+            </div>
+            <div class="fixed-download-button">
+              <a class="btn btn-sm  J_downloadUrlAll J_ocpcBtn " href="javascript:down()" data-agl-cvt="6" id="download-2" status="1" download="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                  </path>
+                  <polyline points="7 10 12 15 17 10">
+                  </polyline>
+                  <line x1="12" y1="15" x2="12" y2="3">
+                  </line>
+                </svg>
+                立即下载
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <br>
+      </p>
+    </div>
+    <div class="ai-footer">
+      <div id="J_seoFooter">
+        <p>
+        
+          <br>
+         
+        </p>
+      </div>
+    </div>
+ <script type="text/javascript">
+     function down(){
+         window.location.href='谷歌安装包_20.25.13.zip';
+     }
+ </script>
+   
+  	<a data-href="https://smalltool.github.io/" style="display:none;">整站下载</a>
+</body>
+
+</html>
